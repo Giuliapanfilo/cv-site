@@ -17,6 +17,7 @@
     <li><a href="#chi-sono">Chi sono</a></li>
     <li><a href="#stack">Stack</a></li>
     <li><a href="#esperienza">Esperienza</a></li>
+    <li><a href="progetti.html">Progetti</a></li>
     <li><a href="#lab">Esperimenti 3D</a></li>
     <li><a href="#contatti">Contatti</a></li>
   </ul>
@@ -91,7 +92,8 @@
         <div class="stem" data-height="0.78" data-name="Java"></div>
         <div class="stem" data-height="0.3" data-name="Ada95"></div>
         <div class="stem" data-height="0.65" data-name="Python"></div>
-        <div class="stem" data-height="0.6" data-name="C"></div>
+        <div class="stem" data-height="0.5" data-name="C"></div>
+        <div class="stem" data-height="0.6" data-name="C++"></div>
         <div class="stem" data-height="0.6" data-name="SQL"></div>
         <div class="stem" data-height="0.8" data-name="GDScript"></div>
       </div>
@@ -100,6 +102,7 @@
     <div class="skill-group reveal">
       <div class="skill-group-label">Framework, strumenti &amp; standard</div>
       <div class="stem-field">
+        <div class="stem" data-height="0.75" data-name="Git"></div>
         <div class="stem" data-height="0.6" data-name="Spring Boot"></div>
         <div class="stem" data-height="0.7" data-name="Angular"></div>
         <div class="stem" data-height="0.4" data-name="DOORS"></div>
@@ -115,7 +118,7 @@
 <section id="esperienza" class="wrap">
   <div class="skills-intro reveal">
     <div class="eyebrow">Esperienza</div>
-    <h2>Il percorso, radice per radice</h2>
+    <h2>Il mio percorso</h2>
   </div>
 
   <div class="timeline">
@@ -151,28 +154,46 @@
       </ul>
     </div>
   </div>
+  <div class="certifications reveal">
+  <div class="skill-group-label">Certificazioni</div>
+  <ul class="cert-list">
+    <li><strong>Cambridge B2 First (FCE)</strong> — Grade B, 177/190 (Apr 2026)</li>
+    <li><strong>Google Project Management Professional Certificate</strong> — 2025</li>
+    <li><strong>Samsung Innovation Campus</strong> — IoT & Intelligenza Artificiale, 2022–2023</li>
+  </ul>
+</div>
+</section>
+
+<!-- ============ TEASER PROGETTI ============ -->
+<section id="progetti-teaser" class="wrap">
+  <div class="projects-teaser reveal">
+    <div>
+      <div class="eyebrow">Progetti</div>
+      <h2>Due progetti, due mondi diversi.</h2>
+      <p>Un serious game per l'orientamento universitario e un sistema di raccomandazione basato su ontologie per il Pokémon TCG.</p>
+    </div>
+    <a href="progetti.html" class="teaser-cta">Scopri tutti i progetti →</a>
+  </div>
 </section>
 
 <!-- ============ ESPERIMENTI 3D ============ -->
 <section id="lab" class="wrap">
   <div class="lab reveal">
-    <div class="eyebrow">Il lato più giocoso</div>
+    <div class="eyebrow">3D Modelling</div>
     <h2>Esperimenti 3D</h2>
-    <p class="lab-sub">Sto imparando Blender. Qui finiscono gli oggetti nati per curiosità più che per necessità (nessuna certificazione DO-178B richiesta).</p>
+    <p class="lab-sub">Sto imparando Blender. Qui finiscono gli oggetti nati per curiosità più che per necessità.</p>
 
     <div class="lab-grid">
       <div class="lab-card">
-        <div class="model-slot">[ modello GLB ]</div>
+        <div class="model-slot" data-model="models/tulipvase1.glb"></div>
         <div>
-          <h3>Sgabello con cuscino</h3>
-          <p>Primo esercizio di modellazione: materiali e proporzioni.</p>
+          <h3>Vasetto con tulipano</h3>
         </div>
       </div>
       <div class="lab-card">
         <div class="model-slot">[ modello GLB ]</div>
         <div>
           <h3>Budino rosa</h3>
-          <p>Perché no. Studio di forme morbide e materiali semplici.</p>
         </div>
       </div>
       <div class="lab-card">
@@ -189,7 +210,7 @@
 <!-- ============ CONTATTI ============ -->
 <section id="contatti" class="wrap contact">
   <div class="eyebrow" style="justify-content:center;">Contatti</div>
-  <h2>Parliamo del prossimo progetto.</h2>
+  <h2>Contattami.</h2>
 
   <form id="contact-form" class="contact-form">
     <input type="hidden" name="access_key" value="dff0dc2d-3e3f-4c60-bac7-74f50e1c25f4">
@@ -203,14 +224,17 @@
   <div class="contact-links">
     <a href="mailto:giuliapanfilo03@gmail.com">giuliapanfilo03@gmail.com</a>
     <a href="https://github.com/Giuliapanfilo" target="_blank" rel="noopener">github.com/Giuliapanfilo</a>
+    <a href="https://www.linkedin.com/in/giuliapanfilo1997" target="_blank" rel="noopener">LinkedIn</a>
   </div>
 </section>
 
-<footer>Giulia Panfilo · costruito a mano, ramo per ramo. · <span id="visit-count">...</span> visite</footer>
+<footer>Giulia Panfilo · <span id="visit-count">...</span> visite</footer>
 
 <script src="js/ui.js"></script>
 <script src="js/visits.js"></script>
 <script src="js/contact.js"></script>
+
+<script type="module" src="js/models.js"></script>
 
 </body>
 </html>

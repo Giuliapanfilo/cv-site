@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Progetti · Giulia Panfilo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav id="nav">
+  <div class="nav-mark"><a href="index.html" style="text-decoration:none; color:inherit;">Giulia Panfilo</a></div>
+  <ul class="nav-links">
+    <li><a href="index.html#chi-sono">Chi sono</a></li>
+    <li><a href="index.html#stack">Stack</a></li>
+    <li><a href="index.html#esperienza">Esperienza</a></li>
+    <li><a href="progetti.html">Progetti</a></li>
+    <li><a href="index.html#lab">Esperimenti 3D</a></li>
+    <li><a href="index.html#contatti">Contatti</a></li>
+  </ul>
+</nav>
+
+<header class="wrap" style="padding-top:140px; padding-bottom:40px;">
+  <div class="eyebrow">Progetti</div>
+  <h1 style="font-size:clamp(2rem,5vw,3.4rem); max-width:760px;">Quello che ho costruito.</h1>
+  <p class="hero-sub" style="margin-top:20px;">Due progetti universitari, due domini molto diversi: un serious game per l'orientamento e un sistema di raccomandazione basato su ontologie.</p>
+</header>
+
+<section class="wrap" style="padding-top:0;">
+  <div class="projects-grid">
+
+    <article class="project-card reveal">
+      <div class="project-tags">
+        <span class="tag-pill">Godot Engine</span>
+        <span class="tag-pill">GDScript</span>
+        <span class="tag-pill">Blender</span>
+        <span class="tag-pill">Game Design</span>
+      </div>
+      <h2>Tears of the Campus</h2>
+      <div class="project-compare">
+        <figure>
+          <img src="images/diboutside2.png" alt="Foto reale dell'esterno del dipartimento" loading="lazy">
+          <figcaption>L'ambiente reale del dipartimento</figcaption>
+        </figure>
+        <figure>
+          <img src="images/diboutsideblender.png" alt="Ricostruzione 3D della segreteria in Blender" loading="lazy">
+          <figcaption>La stessa vista, ricostruita in Blender</figcaption>
+        </figure>
+      </div>
+      <p class="project-role">Tesi di laurea triennale</p>
+      <p>Un serious game pensato per orientare studentesse e studenti alle prime armi con la vita universitaria. Il giocatore esplora ricostruzioni 3D fedeli agli spazi reali del dipartimento, modellate in Blender a partire da foto e planimetrie, e affronta quest ispirate a procedure vere: iscrizione, prestito bibliotecario, ricevimento con i docenti.</p>
+      <p>Il cuore del gameplay è <em>Enroll Battle</em>, un duello a turni in stile Pokémon contro la segreteria amministrativa, pensato per trasformare l'ansia da burocrazia in curiosità. Oggetti collezionabili sparsi per la mappa aggiungono un livello narrativo e motivazionale al percorso.</p>
+      <figure class="project-single-media">
+        <img src="images/godot.png" alt="Schermata di gioco in Godot Engine, versione in sviluppo" loading="lazy">
+        <figcaption>Il gioco in Godot Engine, ancora in lavorazione</figcaption>
+      </figure>
+    </article>
+     <a href="https://github.com/Giuliapanfilo/TearsOfTheCampus" target="_blank" rel="noopener" class="repo-link">Vedi il codice su GitHub →</a>
+
+    <article class="project-card reveal">
+      <div class="project-tags">
+        <span class="tag-pill">Python</span>
+        <span class="tag-pill">OWL / RDF</span>
+        <span class="tag-pill">SPARQL</span>
+        <span class="tag-pill">Clustering</span>
+      </div>
+      <h2>PokéVision</h2>
+      <div class="project-compare">
+        <figure>
+          <img src="images/Card.png" alt="Grafo delle classi dell'ontologia OWL, con specializzazione di Card in EnergyCard, PokemonCard e TrainerCard" loading="lazy">
+          <figcaption>Gerarchia delle classi dell'ontologia (Protégé)</figcaption>
+        </figure>
+        <figure>
+          <img src="images/KEYWORDS_QUANTITY_silhouette.png" alt="Grafico elbow e silhouette score per la determinazione del numero ottimale di cluster" loading="lazy">
+          <figcaption>Valutazione del numero ottimale di cluster</figcaption>
+        </figure>
+      </div>
+      <p class="project-role">Progetto per Ingegneria della Conoscenza</p>
+      <p>Un sistema esperto per aiutare i giocatori meno esperti a costruire mazzi nel Pokémon Trading Card Game. Al centro c'è un'ontologia OWL del dominio (carte, mazzi, zone di gioco, regole), validata con vincoli SHACL e arricchita da regole SWRL che inferiscono la validità di azioni ed evoluzioni.</p>
+      <p>Sopra questa base di conoscenza, un motore di raccomandazione usa il clustering non supervisionato dei mazzi (K-Means, Agglomerative, DBSCAN, BIRCH) per suggerire le carte mancanti a partire da un mazzo incompleto, valutato tramite masked prediction sui dati di tornei reali.</p>
+    </article>
+    <a href="https://github.com/Giuliapanfilo/pokemonDeckBuilder" target="_blank" rel="noopener" class="repo-link">Vedi il codice su GitHub →</a>
+
+  </div>
+  <div class="secondary-projects reveal">
+  <div class="skill-group-label">Altri progetti</div>
+  <div class="secondary-projects-list">
+    <div class="secondary-project">
+      <h3>Battleship</h3>
+      <p>Battaglia navale da riga di comando in Java, sviluppata con metodologia agile: branching Git, pull request e code review.</p>
+      <div class="project-tags">
+        <span class="tag-pill">Java</span>
+        <span class="tag-pill">Git</span>
+      </div>
+    </div>
+    <div class="secondary-project">
+      <h3>E-Commerce Simulation</h3>
+      <p>Sistema a riga di comando in C con catalogo prodotti, gestione ordini e operazioni di I/O su file.</p>
+      <div class="project-tags">
+        <span class="tag-pill">C</span>
+        <span class="tag-pill">File I/O</span>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<footer>Giulia Panfilo</footer>
+
+<script src="js/ui.js"></script>
+
+</body>
+</html>
